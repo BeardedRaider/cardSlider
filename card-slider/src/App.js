@@ -1,9 +1,20 @@
 import './App.css';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function App() {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 3
+  };
   return (
     <div className="w-3/4 m-auto">
       <div className='mt-20'>
+      <Slider {...settings}>
         {data.map((d) => (
           <div className="bg-white h-[450px] text-black rounded-xl">
             <div className="h-56 rounded-t-xl bg-green-200 flex justify-center items-center">
@@ -17,7 +28,7 @@ function App() {
             </div>
           </div>
         ))}
-
+      </Slider>
       </div>
     
     </div>
