@@ -8,7 +8,7 @@ function App() {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 3
   };
   return (
@@ -16,7 +16,7 @@ function App() {
       <div className='mt-20'>
       <Slider {...settings}>
         {data.map((d) => (
-          <div className="bg-white h-[450px] text-black rounded-xl">
+          <div className="bg-white h-[400px] text-black rounded-xl">
             <div className="h-56 rounded-t-xl bg-green-200 flex justify-center items-center">
               <img src={d.img} alt="" className="h-40 w-40 rounded-full"/>
             </div>
